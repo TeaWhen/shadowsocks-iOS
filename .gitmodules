@@ -10,3 +10,6 @@
 [submodule "iProxy"]
 	path = iProxy
 	url = https://github.com/clowwindy/iProxy.git
+[submodule "Flora_Pac"]
+	path = Flora_Pac
+	url = https://github.com/Leask/Flora_Pac.git
