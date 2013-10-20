@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22F665D01813D44000FA3CFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F665CF1813D44000FA3CFD /* Images.xcassets */; };
 		621571A916CF6BCB003D96B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621571A816CF6BCB003D96B4 /* UIKit.framework */; };
 		621571AB16CF6BCB003D96B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621571AA16CF6BCB003D96B4 /* Foundation.framework */; };
 		621571AD16CF6BCB003D96B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621571AC16CF6BCB003D96B4 /* CoreGraphics.framework */; };
@@ -114,6 +115,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22F665CF1813D44000FA3CFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = shadowsocks/Images.xcassets; sourceTree = "<group>"; };
 		621571A516CF6BCB003D96B4 /* shadowsocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shadowsocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		621571A816CF6BCB003D96B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		621571AA16CF6BCB003D96B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -302,6 +304,7 @@
 		6215719C16CF6BCA003D96B4 = {
 			isa = PBXGroup;
 			children = (
+				22F665CF1813D44000FA3CFD /* Images.xcassets */,
 				62DAB9D91779DAB8003DFFDE /* icon144.png */,
 				62DAB9D71779DAB5003DFFDE /* icon72.png */,
 				62DAB9D51779DAAF003DFFDE /* icon114.png */,
@@ -661,6 +664,7 @@
 				62D85AB5176DAA7200FE5575 /* silence.wav in Resources */,
 				EB189096BC8B91FA0F60A34C /* 3gnet_disable.mobileconfig in Resources */,
 				EB1890D6331E61914013309F /* polipo_disable.config in Resources */,
+				22F665D01813D44000FA3CFD /* Images.xcassets in Resources */,
 				62DAB9D41779DAAD003DFFDE /* icon57.png in Resources */,
 				62DAB9D61779DAAF003DFFDE /* icon114.png in Resources */,
 				62DAB9D81779DAB5003DFFDE /* icon72.png in Resources */,
@@ -832,6 +836,8 @@
 		621571CC16CF6BCB003D96B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -857,6 +863,8 @@
 		621571CD16CF6BCB003D96B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
