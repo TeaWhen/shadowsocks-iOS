@@ -34,6 +34,8 @@ void polipo_exit();
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [TestFlight takeOff:@"f9b6c62f-3dd8-4786-9f0d-4340ffcca676"];
+    
     [self updateProxyMode];
 
     [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{

@@ -10,6 +10,7 @@
 #import "SWBViewController.h"
 #import "ProxySettingsTableViewController.h"
 #import "SWBAboutController.h"
+#import "TestFlight.h"
 
 #define kNewTabAddress @"shadowweb:newtab"
 #define kAboutBlank @"shadowweb:blank"
@@ -295,6 +296,7 @@
 }
 
 - (void)showSettings {
+    [TestFlight passCheckpoint:@"Show Settings"];
     ProxySettingsTableViewController *settingsController = [[ProxySettingsTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:settingsController];
     //    nav.navigationBar.tintColor = [UIColor blackColor];
@@ -541,7 +543,7 @@
 }
 
 - (void)play {
-
+    [TestFlight passCheckpoint:@"Play sound in background SHOULD NEVER RUN THIS LINE"];
     // Play music, so app can run in the backgound.
     AVAudioSession *session = [AVAudioSession sharedInstance];
     [session setActive:YES error:nil];

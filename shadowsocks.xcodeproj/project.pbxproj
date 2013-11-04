@@ -83,6 +83,10 @@
 		62DAB9D61779DAAF003DFFDE /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 62DAB9D51779DAAF003DFFDE /* icon114.png */; };
 		62DAB9D81779DAB5003DFFDE /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 62DAB9D71779DAB5003DFFDE /* icon72.png */; };
 		62DAB9DA1779DAB8003DFFDE /* icon144.png in Resources */ = {isa = PBXBuildFile; fileRef = 62DAB9D91779DAB8003DFFDE /* icon144.png */; };
+		72FB842A182774DB007BA0EC /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FB8424182774DB007BA0EC /* libTestFlight.a */; };
+		72FB842B182774DB007BA0EC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 72FB8425182774DB007BA0EC /* README.md */; };
+		72FB842C182774DB007BA0EC /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 72FB8426182774DB007BA0EC /* release_notes.md */; };
+		72FB842E18277507007BA0EC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FB842D18277507007BA0EC /* libz.dylib */; };
 		96D80C05176CE1D7006C8078 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D80C04176CE1D7006C8078 /* AVFoundation.framework */; };
 		EB189096BC8B91FA0F60A34C /* 3gnet_disable.mobileconfig in Resources */ = {isa = PBXBuildFile; fileRef = EB1897AD03717EB5E44BA24B /* 3gnet_disable.mobileconfig */; };
 		EB1890D6331E61914013309F /* polipo_disable.config in Resources */ = {isa = PBXBuildFile; fileRef = EB189F29205BA2AB998B867D /* polipo_disable.config */; };
@@ -257,6 +261,13 @@
 		62DAB9D51779DAAF003DFFDE /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
 		62DAB9D71779DAB5003DFFDE /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
 		62DAB9D91779DAB8003DFFDE /* icon144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon144.png; sourceTree = "<group>"; };
+		72FB8424182774DB007BA0EC /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		72FB8425182774DB007BA0EC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		72FB8426182774DB007BA0EC /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		72FB8427182774DB007BA0EC /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		72FB8428182774DB007BA0EC /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		72FB8429182774DB007BA0EC /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		72FB842D18277507007BA0EC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		96D80C04176CE1D7006C8078 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EB1891B68FCBD841C5E461B6 /* About.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = About.md; sourceTree = SOURCE_ROOT; };
 		EB1891FD08E70E9E9DC84AFD /* about.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = about.txt; sourceTree = "<group>"; };
@@ -276,12 +287,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72FB842E18277507007BA0EC /* libz.dylib in Frameworks */,
 				623A7ECF1795B1D800DF11DF /* libshadowsocks.a in Frameworks */,
+				62CD119A175E3BD7008C4D0C /* libcrypto.a in Frameworks */,
 				62CD9190178977B500B2CB55 /* MessageUI.framework in Frameworks */,
+				72FB842A182774DB007BA0EC /* libTestFlight.a in Frameworks */,
 				621FCC091760400800411E5F /* CFNetwork.framework in Frameworks */,
 				621FCC071760400400411E5F /* MobileCoreServices.framework in Frameworks */,
 				96D80C05176CE1D7006C8078 /* AVFoundation.framework in Frameworks */,
-				62CD119A175E3BD7008C4D0C /* libcrypto.a in Frameworks */,
 				628693EC16DA2706008B1A26 /* SystemConfiguration.framework in Frameworks */,
 				621571A916CF6BCB003D96B4 /* UIKit.framework in Frameworks */,
 				621571AB16CF6BCB003D96B4 /* Foundation.framework in Frameworks */,
@@ -304,6 +317,7 @@
 		6215719C16CF6BCA003D96B4 = {
 			isa = PBXGroup;
 			children = (
+				72FB8423182774DB007BA0EC /* TestFlightSDK2 */,
 				22F665CF1813D44000FA3CFD /* Images.xcassets */,
 				62DAB9D91779DAB8003DFFDE /* icon144.png */,
 				62DAB9D71779DAB5003DFFDE /* icon72.png */,
@@ -328,6 +342,7 @@
 		621571A716CF6BCB003D96B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				72FB842D18277507007BA0EC /* libz.dylib */,
 				62CD918F178977B500B2CB55 /* MessageUI.framework */,
 				621FCC081760400800411E5F /* CFNetwork.framework */,
 				621FCC061760400400411E5F /* MobileCoreServices.framework */,
@@ -581,6 +596,19 @@
 			path = "iProxy/Frameworks/polipo-20091115";
 			sourceTree = SOURCE_ROOT;
 		};
+		72FB8423182774DB007BA0EC /* TestFlightSDK2 */ = {
+			isa = PBXGroup;
+			children = (
+				72FB8424182774DB007BA0EC /* libTestFlight.a */,
+				72FB8425182774DB007BA0EC /* README.md */,
+				72FB8426182774DB007BA0EC /* release_notes.md */,
+				72FB8427182774DB007BA0EC /* TestFlight+AsyncLogging.h */,
+				72FB8428182774DB007BA0EC /* TestFlight+ManualSessions.h */,
+				72FB8429182774DB007BA0EC /* TestFlight.h */,
+			);
+			path = TestFlightSDK2;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -628,6 +656,11 @@
 				CLASSPREFIX = SWB;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = LeaskH.com;
+				TargetAttributes = {
+					621571A416CF6BCB003D96B4 = {
+						DevelopmentTeam = 7676B49VAW;
+					};
+				};
 			};
 			buildConfigurationList = 621571A016CF6BCA003D96B4 /* Build configuration list for PBXProject "shadowsocks" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -655,10 +688,12 @@
 			files = (
 				621571B316CF6BCB003D96B4 /* InfoPlist.strings in Resources */,
 				621571BB16CF6BCB003D96B4 /* Default.png in Resources */,
+				72FB842C182774DB007BA0EC /* release_notes.md in Resources */,
 				62628CB6176EEF1C001F6003 /* Localizable.strings in Resources */,
 				621571BD16CF6BCB003D96B4 /* Default@2x.png in Resources */,
 				621571BF16CF6BCB003D96B4 /* Default-568h@2x.png in Resources */,
 				621FCBF717603E5100411E5F /* proxy.pac in Resources */,
+				72FB842B182774DB007BA0EC /* README.md in Resources */,
 				EB189A01F66776EC1714F32D /* 3gnet_enable.mobileconfig in Resources */,
 				62D85AB4176DAA7200FE5575 /* polipo.config in Resources */,
 				62D85AB5176DAA7200FE5575 /* silence.wav in Resources */,
@@ -839,7 +874,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -851,10 +886,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/OpenSSL-for-iPhone/lib\"",
+					"\\\"$(SRCROOT)/OpenSSL-for-iPhone/lib\\\"",
+					"/Users/MrX/src/shadowsocks-iOS/TestFlightSDK2",
+					"/Users/MrX/src/shadowsocks-iOS/OpenSSL-for-iPhone/lib",
 				);
 				PRODUCT_NAME = shadowsocks;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "CADD54B1-91ED-4ECA-9BAF-9602B868A7E5";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -866,7 +903,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -878,10 +915,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/OpenSSL-for-iPhone/lib\"",
+					"\\\"$(SRCROOT)/OpenSSL-for-iPhone/lib\\\"",
+					"/Users/MrX/src/shadowsocks-iOS/TestFlightSDK2",
+					"/Users/MrX/src/shadowsocks-iOS/OpenSSL-for-iPhone/lib",
 				);
 				PRODUCT_NAME = shadowsocks;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "CADD54B1-91ED-4ECA-9BAF-9602B868A7E5";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};

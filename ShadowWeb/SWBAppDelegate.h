@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "TestFlight.h"
+
 #import "SWBNetworkActivityIndicatorManager.h"
 
 #define appNetworkActivityIndicatorManager [(SWBAppDelegate *)[UIApplication sharedApplication].delegate networkActivityIndicatorManager]
