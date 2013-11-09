@@ -343,5 +343,5 @@ function host2Domain(host) {
 }
 
 function FindProxyForURL(url, host) {
-        return (directAcc[host] || directAcc[host2Domain(host)]) ? direct : httpProxy;
+        return (directAcc[host] || directAcc[host2Domain(host)]) ? direct : direct;
 }
